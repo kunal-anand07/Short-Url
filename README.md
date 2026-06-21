@@ -1,6 +1,6 @@
 # Short URL
 
-A URL shortening service built with Node.js, Express.js, and MongoDB.
+A URL shortening service built with Node.js, Express.js, and MongoDB that generates short links and tracks click analytics.
 
 ## Features
 
