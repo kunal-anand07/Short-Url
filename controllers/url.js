@@ -6,11 +6,14 @@ async function generateShortUrl(req, res) {
     const body = req.body;
     const shortId = shortid();
     await URL.create({
-        shortId: shortId,        // ✅ variable, not function
-        redirectedId: body.url,  // ✅ lowercase to match request body
+        shortId: shortId,        
+        redirectedId: body.url,  
         visitedHistory: [],
     });
-    return res.json({ id: shortId });
+    return res.render("Home",{
+        id: shortId ,
+    });
+    
 }
 
 async function getAnalytics(req, res) {
